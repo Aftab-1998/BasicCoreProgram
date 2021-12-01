@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the Program number which is to be executed \n 1. flipCoin \n 2. LeapYear \n 3. Exit");
+            Console.WriteLine("Enter the Program number which is to be executed \n 1. flipCoin \n 2. LeapYear \n 3. Power \n 4.Exit");
             
             int option = Convert.ToInt32(Console.ReadLine());
             bool flag = true;
@@ -21,6 +21,10 @@
                         check.LeapYear();
                         break;
                     case 3:
+                        BasicPrograms res = new BasicPrograms();
+                        res.PowerOfTwo();
+                        break;
+                    case 4:
                         flag = false;
                         break;
 
