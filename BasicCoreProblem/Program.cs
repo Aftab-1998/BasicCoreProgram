@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the Program number which is to be executed \n 1. flipCoin \n 2. LeapYear \n 3. Power \n 4.Exit");
+            Console.WriteLine("Enter the Program number which is to be executed \n 1. flipCoin \n 2. LeapYear \n 3. Power \n 4. Harmonic \n.5 Exit");
             
             int option = Convert.ToInt32(Console.ReadLine());
             bool flag = true;
@@ -25,6 +25,10 @@
                         res.PowerOfTwo();
                         break;
                     case 4:
+                        BasicPrograms sum = new BasicPrograms();
+                        sum.Harmonic();
+                        break;
+                    case 5:
                         flag = false;
                         break;
 
