@@ -6,7 +6,7 @@ namespace BasicCoreProblems
         static void Main(string[] args)
         {
             Console.WriteLine("Enter the Program number which is to be executed \n 1. flipCoin \n 2. LeapYear \n 3. Power \n 4. Harmonic \n 5. Prime");
-            Console.WriteLine(" 6. Division  \n 7. SwappingNumber \n 8. Exit");
+            Console.WriteLine(" 6. Division  \n 7. SwappingNumber \n 8.EvenOdd \n 9. Exit");
             int option = Convert.ToInt32(Console.ReadLine());
             bool flag = true;
             while (flag)
@@ -42,6 +42,11 @@ namespace BasicCoreProblems
                         quotient.Division();
                         break;
                     case 8:
+                        BasicPrograms Even = new BasicPrograms();
+                        Even.EvenOdd();
+                        break;
+
+                    case 9:
                         flag = false;
                         break;
 

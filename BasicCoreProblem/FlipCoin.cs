@@ -7,7 +7,7 @@ namespace BasicCoreProblems
 {
     public class BasicPrograms
     {
-       
+
         public void FlipCoin()
         {
             Console.WriteLine("Enter the number of times to flip coin");
@@ -89,7 +89,7 @@ namespace BasicCoreProblems
                 Console.WriteLine(num + " is not a Prime number");
             }
         }
-        public void  SwappingNumber()
+        public void SwappingNumber()
         {
             Console.WriteLine("Enter the First number :");
             int firstNumber = Convert.ToInt32(Console.ReadLine());
@@ -110,6 +110,19 @@ namespace BasicCoreProblems
             double remainder = dividend % divisor;
             Console.WriteLine("Quotient is : " + quotient);
             Console.WriteLine("Remainder is : " + remainder);
+        }
+        public void EvenOdd()
+        {
+            Console.WriteLine("Enter the number to Check");
+            int num = Convert.ToInt32(Console.ReadLine());
+            if (num % 2 == 0)
+            {
+                Console.WriteLine("{0} is an Even number", num);
+            }
+            else
+            {
+                Console.WriteLine("{0} is an Odd number", num);
+            }
         }
     }   
 }
